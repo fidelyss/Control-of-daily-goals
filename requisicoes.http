@@ -2,8 +2,8 @@ POST http://localhost:3333/goal
 Content-Type: application/json
 
 {
-    "title":"Fazer alguma coisa",
-    "desiredWeeklyFrequency":5
+    "title":"praticar matematica",
+    "desiredWeeklyFrequency":3
 }
 
 ###
@@ -16,5 +16,8 @@ POST http://localhost:3333/completions
 Content-Type: application/json
 
 {
-    "goalId":"l1dvstnogz6qqu7u7zdfvtf9"
+    "goalId":"v1zl1kesfr1nerw3mjn519e5"
 }
+###
+    
+GET http://localhost:3333/summary

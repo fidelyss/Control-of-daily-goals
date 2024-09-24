@@ -1,5 +1,5 @@
-import { db } from '../'
-import { goals } from '../Schema'
+import { db } from '../db'
+import { goals } from '../db/Schema'
 interface CreateGoalsRequest {
     title: string,
     desiredWeeklyFrequency: number
