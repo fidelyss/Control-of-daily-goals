@@ -3,7 +3,8 @@ Content-Type: application/json
 
 {
     "title":"praticar matematica",
-    "desiredWeeklyFrequency":3
+    "desiredWeeklyFrequency":3,
+
 }
 
 ###
@@ -16,7 +17,8 @@ POST http://localhost:3333/completions
 Content-Type: application/json
 
 {
-    "goalId":"v1zl1kesfr1nerw3mjn519e5"
+    "goalId":"o2vgqnj1fc87he0w03phaq63",
+    "createAt":1695859200
 }
 ###
     
