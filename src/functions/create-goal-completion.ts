@@ -2,6 +2,7 @@ import { and, count, eq, gte, lte, sql } from 'drizzle-orm'
 import { db } from '../db'
 import { goalCompletions, goals } from '../db/Schema'
 import dayjs from 'dayjs'
+import { date } from 'drizzle-orm/mysql-core'
 
 
 

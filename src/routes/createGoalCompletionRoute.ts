@@ -1,6 +1,7 @@
 import { z } from 'zod'
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { createGoalCompletion } from '../functions/create-goal-completion'
+import dayjs from 'dayjs'
 export const createGoalCompletionRoute: FastifyPluginAsyncZod = async (app) => {
     app.post('/completions', {
         schema: {
@@ -12,6 +13,7 @@ export const createGoalCompletionRoute: FastifyPluginAsyncZod = async (app) => {
         const { goalId } = request.body
         const result = await createGoalCompletion({
             goalId,
+            createAt: dayjs().toDate(),
         })
         return result
     })

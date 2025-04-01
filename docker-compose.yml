@@ -2,7 +2,7 @@ name: metasplataform
 
 services:
   pg:
-    image: bitnami/postgresql:13.16.0
+    image: postgres:latest
     ports:
       - '5432:5432'
     environment:
